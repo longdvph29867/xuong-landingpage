@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Ôm trái đất vào lòng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container mx-auto h-[92px] flex justify-between items-center">
+            <div>
+                <img src="./img/logo-274.svg" alt="" class="sm:w-[274] w-52">
+            </div>
+            <nav class="flex relative font-['Opensans-ExtraBold']">
+                <button class="lg:hidden block">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </button>
+                <ul class="lg:flex items-center justify-center hidden">
+                    <li><a href="#" class="text-lg inline-block font-bold hover:text-[#066b2a] duration-300 ml-16">TRANG CHỦ</a></li>
+                    <li><a href="#" class="text-lg inline-block font-bold hover:text-[#066b2a] duration-300 ml-16">KHOÁ HỌC HÈ</a></li>
+                    <li><a href="#" class="text-lg inline-block font-bold hover:text-[#066b2a] duration-300 ml-16 lg:mr-4">LIÊN HỆ</a></li>
+                </ul>
+                <div class="menuHeader hidden absolute z-50 bg-white right-0 top-full w-40 shadow-xl rounded-md mt-3 duration-500 overflow-hidden origin-top-right">
+                    <ul class="p-4 lg:hidden block">
+                        <li><a href="#" class="sm:text-lg text-sm inline-block font-bold mx-0 mt-2 hover:text-[#066b2a] duration-300">TRANG CHỦ</a></li>
+                        <li><a href="#" class="sm:text-lg text-sm inline-block font-bold mx-0 mt-2 hover:text-[#066b2a] duration-300">KHOÁ HỌC HÈ</a></li>
+                        <li><a href="#" class="sm:text-lg text-sm inline-block font-bold mx-0 mt-2 hover:text-[#066b2a] duration-300">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="font-['Myriad_Pro_Bold']">
+        <div class="relative bg-[url('/img/banner/banner1.jpg')] bg-top bg-cover xl:pb-[45%] lg:pb-[55%] md:pb-[70%] sm:pb-[80%] pb-[110%]">
+            <img src="./img/banner/om-trai-dat-567.svg" alt="" class="absolute top-0 right-1/2 translate-x-1/2 2xl:w-[567px] xl:w-[430px] lg:w-[400px] md:w-[367px] sm:w-[320px] w-[250px]">
+            <img src="./img/banner/tham-gia-hoc-289.svg" alt="" class="banner-text-left absolute z-10">
+            <img src="./img/banner/hoc-bong-285.svg" alt="" class="banner-text-right absolute z-10">
+            <div class="absolute 2xl:bottom-0 sm:bottom-[-10%] sm:top-auto top-[80%] right-1/2 translate-x-1/2 p-2 backdrop-brightness-200 rounded-2xl w-[90%] sm:w-auto">
+                <div class="relative p-6 rounded-2xl bg-gradient-to-t from-[#c0dced] via-white to-white sm:w-[612px] w-full">
+                    <form action="" class="font-semibold">
+                        <div class="grid sm:grid-cols-2 sm:gap-6">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Họ tên con" class="w-full py-2 border-b border-blue-800 outline-none text-blue-800 sm:text-base text-xs bg-transparent placeholder-blue-800">
+                            </div>
+                            <div class="mb-4">
+                                <select class="w-full py-2 border-b border-blue-800 outline-none bg-transparent text-blue-800 sm:text-base text-xs sm:mt-[3px]">
+                                    <option value="" hidden>Con đang học lớp</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 sm:gap-6">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Số điện thoại phụ huynh" class="w-full py-2 border-b border-blue-800 outline-none text-blue-800 sm:text-base text-xs bg-transparent placeholder-blue-800">
+                            </div>
+                            <div class="mb-4">
+                                <select class="w-full py-2 border-b border-blue-800 outline-none bg-transparent text-blue-800 sm:text-base text-xs sm:mt-[3px]">
+                                    <option value="" hidden>Khu vực gia đình đang sinh sống</option>
+                                    <option value="">Hoàn Kiếm</option>
+                                    <option value="">Tây Hồ</option>
+                                    <option value="">Thanh Xuân</option>
+                                    <option value="">Cầu Giấy</option>
+                                    <option value="">Đống Đa</option>
+                                    <option value="">Hai Bà Trưng</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-blue-800 sm:text-base text-xs flex justify-between sm:items-center sm:flex-row flex-col gap-2 mb-6 ">
+                            <p>Con có phải học viên của Language Link Academic không?</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="confirm">
+                                    <span class="inline-block translate-y-[-1px]">
+                                        Có
+                                    </span>
+                                </label>
+                                <label class="ml-1">
+                                    <input type="radio" name="confirm">
+                                    <span class="inline-block translate-y-[-1px]">
+                                        Không
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button class="font-['UTM_Bold_Itallic'] absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 sm:w-[262px] w-56 h-12 text-xl italic font-black bg-gradient-to-t from-[#007042] to-[#50c82e] text-white rounded-3xl border-[2px] border-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                            THAM GIA NGAY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class=" 2xl:mt-14 sm:mt-32 mt-80">
+        <div class="container mx-auto">
+            <div>
+                <img src="./img/co-gi-hay/theo-chu-de_657.svg" alt="" class="w-[567px] mx-auto">
+            </div>
+            <div class="grid sm:grid-cols-3 grid-cols-1 mt-5 sm:mx-[30px] sm:gap-0 gap-8">
+                <div class="relative">
+                    <div class="relative sm:w-[calc(100%+60px)] sm:translate-x-[-30px]">
+                        <img src="./img/co-gi-hay/green-400.svg" alt="" class="w-full">
+                    </div>
+                    <div class="mt-6">
+                        <div class="xl:pr-14 lg:pr-6 sm:pr-4 lg:ml-[-6px] sm:-ml-2.5 sm:pl-0 pl-3">
+                            <img src="./img/co-gi-hay/uom-mam.png" alt="" class="w-full">
+                        </div>
+                        <div class="text-justify lg:mt-8 mt-4 lg:text-lg text-base leading-5 lg:pl-6 sm:pl-1 lg:pr-10 sm:mr-3">
+                            <p>
+                                Con tham gia <b>02 buổi học miễn phí</b> với <b>giáo viên nước ngoài</b> để:
+                            </p>
+                            <div class="md:mt-6 mt-2">
+                                <img src="./img/co-gi-hay/dot-green.svg" alt="" class="w-3 float-left mt-1 mx-3">
+                                <p class="">
+                                    Tích thêm từ vựng, học nhiều cấu trúc câu đa dạng.
+                                </p>
+                            </div>
+                            <div class="md:mt-6 mt-2">
+                                <img src="./img/co-gi-hay/dot-green.svg" alt="" class="w-3 float-left mt-1 mx-3">
+                                <p>
+                                    Học cách xấy dựng bài thuyết trình chuẩn ngữ pháp, 
+                                    luận điểm rành mạch với âm điệu như người bản xứ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rrelative sm:w-[calc(100%+60px)] sm:translate-x-[-30px]">
+                        <img src="./img/co-gi-hay/yellow-400.svg" alt="" class="w-full">
+                    </div>
+                    <div class="mt-6">
+                        <div class="xl:pr-14 lg:pr-6 sm:pr-4 lg:ml-[-6px] sm:-ml-2.5 sm:pl-0 pl-3">
+                            <img src="./img/co-gi-hay/dam-choi.png" alt="" class="w-full">
+                        </div>
+                        <div class="text-justify lg:mt-8 mt-4 lg:text-lg text-base leading-5 lg:pl-6 sm:pl-1 lg:pr-10 sm:mr-3">
+                            <p>
+                                <b>Sau 02 buổi học</b>, con sử dụng các kiến thức đã học cùng với sự chỉ dẫn cẩn 
+                                thận và sát sao của giáo viên, <b>con có thể diễn thuyết trước đám đông và nêu 
+                                lên quan điểm của mình một cách tự tin và lưu loát.</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative sm:w-[calc(100%+60px)] mt-[1px] sm:translate-x-[-30px]">
+                        <img src="./img/co-gi-hay/blue-400.svg" alt="" class="w-full">
+                    </div>
+                    <div class="mt-6">
+                        <div class="xl:pr-14 lg:pr-6 sm:pr-4 lg:ml-[-6px] sm:-ml-2.5 sm:pl-0 pl-3">
+                            <img src="./img/co-gi-hay/thu-hoach.png" alt="" class="w-full">
+                        </div>
+                        <div class="text-justify lg:mt-8 mt-4 lg:text-lg text-base leading-5 lg:pl-6 sm:pl-1 lg:pr-10 sm:mr-3">
+                            <p>
+                                Cuối buổi học thứ hai, có có cơ hội:
+                            </p>
+                            <div class="lg:mt-6 mt-2">
+                                <img src="./img/co-gi-hay/dot-blue.svg" alt="" class="w-3 float-left mt-1 mx-3">
+                                <p class="">
+                                    <b>Nhận học bổng lên đến 15 triệu</b> cho khóa Anh Văn hè. 
+                                </p>
+                            </div>
+                            <div class="lg:mt-6 mt-2">
+                                <img src="./img/co-gi-hay/dot-blue.svg" alt="" class="w-3 float-left mt-1 mx-3">
+                                <p>
+                                    Tham gia <b>chương trình bốc thăm trúng thưởng</b> với nhiều phần quà giá trị.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <button class="font-['UTM_Bold_Itallic'] btn-scroll block sm:w-[385px] mx-auto w-64 h-[70px] sm:text-2xl text-base italic font-black bg-gradient-to-t from-[#007042] to-[#50c82e] text-white rounded-full border-[3px] border-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                    THAM GIA MIỄN PHÍ NGAY
+                </button>
+            </div>
+            <div>
+    
+            </div>
+
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="mt-3">
+        <div class="relative bg-[url('/img/con-duong/con-duong.png')] bg-center bg-cover lg:pb-[58%] md:pb-[78%] pb-[88%]">
+            <img src="./img/con-duong/lam-the-nao-735.svg" alt="" class="2xl:w-[753px] xl:w-[653px] lg:w-[500px] absolute top-[8%] right-1/2 translate-x-1/2">
+            <div class="absolute 2xl:bottom-[4%] sm:bottom-[2%] sm:top-auto top-[102%] right-1/2 translate-x-1/2 p-1 rounded-full bg-gradient-to-t from-[#007042] to-[#50c82e] drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                <button class="font-['UTM_Bold_Itallic'] btn-scroll xl:w-[394px] lg:w-[320px] mx-auto w-56 xl:h-[70px] lg:h-14 h-12 xl:text-3xl lg:text-2xl text-base italic font-black bg-white rounded-full">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#007042] to-[#50c82e]">
+                        THAM GIA NGAY
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="overflow-hidden">
+        <div class="relative">
+            <img src="./img/backgorund-group.png" alt="" class="absolute top-0 left-0 w-full h-full z-[-1] pt-[440px] object-cover object-bottom">
+            <img src="./img/san-ho-trai.png" alt="" class="absolute bottom-[-2%] 2xl:left-[-8%] xl:left-[-12%] lg:left-[-14%] md:left-[-30%] sm:left-[-35%] left-[-55%] xl:brightness-100 lg:brightness-90 brightness-75">
+            <img src="./img/san-ho-phai.png" alt="" class="absolute bottom-[-2%] 2xl:right-[-9%] xl:right-[-25%] lg:right-[-30%] md:right-[-33%] sm:right-[-55%] right-[-60%] xl:brightness-100 lg:brightness-90 brightness-75">
+            <!--  -->
+            <section class="sm:mt-0 mt-16">
+                <div class="container mx-auto">
+                    <div class="flex items-center md:gap-0 gap-3 md:flex-row flex-col-reverse">
+                        <div class="md:w-[37%] xl:pb-48">
+                            <p class="font-['Baloo_2_Regular'] lg:text-3xl sm:text-2xl text-xl mb-6 bg-clip-text text-transparent bg-gradient-to-tr from-[#50c82e] via-[#007042] to-[#007042]">
+                                Quà tặng đặt biệt <br> khi tham gia lớp học thử <br> "ÔM TRÁI ĐẤT VÀO LÒNG"
+                            </p>
+                            <button class="font-['UTM_Bold_Itallic'] btn-scroll lg:w-[340px] w-64 h-16 lg:text-3xl text-2xl italic font-black bg-gradient-to-t from-[#007042] to-[#50c82e] text-white rounded-full border-[2px] border-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                                THAM GIA NGAY
+                            </button>
+                        </div>
+                        <div class="md:w-[63%]">
+                            <img src="./img/qua-tang/qua-tang.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!--  -->
+            <section class="mt-20">
+                <div class="container mx-auto">
+                    <img src="./img/loi-ich-khi/loi-ich-khi-935.svg" alt="" class="w-[935px] mx-auto">
+                    <div class="">
+                        <div class="relative w-[663px] max-w-full mx-auto -translate-x-[3%] xl:mt-3 mt-28">
+                            <img src="./img/loi-ich-khi/img1.png" alt="" class="">
+                            <div class="
+                            w-[40.7%] h-[43.2%]
+                            rounded-full 
+                            sm:p-10 p-4 
+                            md:text-4xl sm:text-3xl text-sm
+                            text-[#50B648] 
+                            font-light
+                            bg-white 
+                            flex items-center text-center 
+                            drop-shadow-[0px_0px_12px_rgba(0,0,0,0.4)]
+                            absolute 
+                            top-[19%] left-[33%]
+                            font-['Baloo_2_Regular']
+                            ">
+                                Ưu điểm vượt trội của lớp học theo chủ đề
+                            </div>
+                            <div class="w-[217px] absolute xl:right-[94%] xl:left-auto left-[4%] xl:top-[6%] xl:bottom-auto bottom-[94%]">
+                                <div>
+                                    <h4 class="font-['Myriad_Pro_Black'] sm:text-xl text-xs font-bold">HỨNG THÚ HỌC TẬP</h4>
+                                    <p class="font-['Myriad_Pro'] mt-1 sm:w-48 w-28 sm:text-base text-xs sm:leading-5">
+                                        Kích hoạt đam mê học tiếng anh với chủ đề hấp dẫn, quen thuộc
+                                    </p>
+                                </div>
+                                <img src="./img/loi-ich-khi/path1.svg" alt="" class="w-[140px] ml-auto mt-3 xl:block hidden">
+                            </div>
+                            <div class="sm:w-[210px] w-2/5 absolute xl:left-[103%] xl:right-auto right-0 xl:top-[21%] xl:bottom-auto bottom-[96%]">
+                                <img src="./img/loi-ich-khi/path2.svg" alt="" class="w-[103px] mr-auto mb-3 xl:block hidden">
+                                <div class="xl:pl-8 xl:text-left text-right">
+                                    <h4 class="font-['Myriad_Pro_Black'] sm:text-xl text-xs font-bold">THUYẾT TRÌNH VIẾT HỌC THẬT</h4>
+                                    <p class="font-['Myriad_Pro'] mt-1 sm:text-base text-xs sm:leading-5">
+                                        Phát triển khả năng thuyết trình tự tin và kỹ năng viết chuẩn học thuật bằng tiếng anh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-[336px] w-full absolute xl:left-[-16%] left-[3%] xl:bottom-[18%] xl:top-auto top-[99%]">
+                                <div class="xl:w-56 w-full xl:text-left text-center">
+                                    <h4 class="font-['Myriad_Pro_Black'] sm:text-xl text-xs font-bold">HOÀN THIỆN MỤC TIÊU</h4>
+                                    <p class="font-['Myriad_Pro'] mt-1 sm:text-base text-xs sm:leading-5">
+                                        Giao tiếp chuẩn - Ngữ pháp chuyên - Thi cử giỏi
+                                    </p>
+                                </div>
+                                <img src="./img/loi-ich-khi/path3.svg" alt="" class="w-[262px] ml-auto mt-3 xl:block hidden">
+                            </div>
+                            <div class="absolute xl:bottom-[14%] xl:top-auto top-[114%] xl:left-[80%] xl:right-auto right-[50%] xl:translate-x-0 translate-x-[57%]
+                            p-1 rounded-full bg-gradient-to-t from-[#007042] to-[#50c82e] drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                                <button class="font-['UTM_Bold_Itallic'] btn-scroll md:w-[334px] w-56 md:h-[60px] h-12 md:text-3xl text-xl italic font-black bg-white rounded-full">
+                                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#007042] to-[#50c82e]">
+                                        THAM GIA NGAY
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+        
+            <section class="xl:mt-10 md:mt-56 sm:mt-44 mt-36">
+                <div class="container mx-auto text-center">
+                    <div class="w-[758px] max-w-full mx-auto">
+                        <img src="./img/gioi-thieu-anh-van/gioi-thieu-758.svg" alt="">
+                        <img src="./img/gioi-thieu-anh-van/phone.png" alt="" class="w-[702px] mx-auto mt-7">
+                        <div class="mt-10 text-[17px] md:text-white text-[#044194]">
+                            <p>
+                                Lớp học thử với giáo viên nước ngoài theo chủ đề “Ôm trái đất vào lòng” 
+                                là một trong những chuỗi hoạt động của khóa Anh Văn Hè 2022 
+                                <b>“Hello Gen-G - Xin chào, thế hệ xanh”</b>.
+                            </p>
+                            <p>
+                                Khóa Anh Văn hè năm thứ 11 của <b>Language Link Academic</b> nơi các em:
+                            </p>
+                            <div class="mt-7">
+                                <div class="w-3 h-3 rounded-full bg-white inline-block"></div>
+                                <b>
+                                    Thỏa sức nâng tầm khả năng Anh ngữ, tích lũy các kỹ năng học tập và phát triển 
+                                    <br> bộ tư duy thế kỷ 21 chỉ trong 7 tuần học
+                                </b>
+                            </div>
+                            <div>
+                                <div class="w-3 h-3 rounded-full bg-white inline-block"></div>
+                                <b>
+                                    Hình thành suy nghĩ tích cực và thực hành lối sống xanh, góp phần bảo vệ môi trường, 
+                                    <br> góp phần giữ gìn màu xanh cho trái đất.
+                                </b>
+                            </div>
+                            <div class="mt-9">
+                                <div class="inline-block mx-auto p-1 rounded-full bg-gradient-to-t from-[#007042] to-[#50c82e] drop-shadow-[4px_4px_4px_rgba(0,0,0,0.3)]">
+                                    <button class="font-['UTM_Bold_Itallic'] md:w-[334px] w-56 md:h-[60px] h-12 md:text-3xl text-xl italic font-black bg-white rounded-full">
+                                        <span class="btn-scroll bg-clip-text text-transparent bg-gradient-to-r from-[#007042] to-[#50c82e]">
+                                            THAM GIA NGAY
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="pt-20 text-white">
+                <div class="container mx-auto overflow-hidden">
+                    <div class="w-[720px] max-w-full mx-auto text-center">
+                        <h3 class="font-['Baloo_2_Regular'] font-bold lg:text-5xl md:text-4xl sm:text-3xl text-xl lg:leading-[60px]">
+                            Hàng ngàn phụ huynh <br> ĐÃ LỰA CHỌN VÀ TIN TUỞNG <br> Language Link Academic
+                        </h3>
+                    </div>
+                    <div class="grid lg:grid-cols-3 col-span-1 lg:gap-[70px]">
+                        <div class="lg:mt-0 mt-[-50px]">
+                            <div class="relative w-[146%] left-1/2 translate-x-[-50%]">
+                                <img src="./img/phu-huynh/phu-huynh1.png" alt="" class="mx-auto">
+                            </div>
+                            <div class="relative top-[-8%]">
+                                <p class="text-xl italic font-bold xl:px-10 lg:px-4 text-center">
+                                    Chị Kiều Lụa - mẹ học sinh Phạm Dương Kiều Phúc
+                                </p>
+                                <p class="text-justify mt-8">
+                                    Con tham gia tới 16 khóa học tại trung tâm, bắt đầu từ khi chưa vào lớp 1. 
+                                    Dưới sự giúp đỡ tận tình của thầy cô Language Link Academic cùng phương 
+                                    pháp học vui vẻ, thoải mái, Kiều Phúc dần gia tăng niềm yêu thích với 
+                                    Tiếng Anh. Con hăng hái tham gia bài giảng, liên tục cố gắng trau dồi khả 
+                                    năng. Con đã đạt được điểm số rất cao là 850/900 cho kì thi TOEFL Junior.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="lg:mt-0 mt-[-100px]">
+                            <div class="relative w-[146%] left-1/2 translate-x-[-50%] lg:top-[-8px]">
+                                <img src="./img/phu-huynh/phu-huynh2.png" alt="" class="mx-auto">
+                            </div>
+                            <div class="relative top-[-8%]">
+                                <p class="text-xl italic font-bold text-center">
+                                    Chị Phan Ngọc Anh (Phan Anh Esheep) - mẹ học sinh Gia Linh
+                                </p>
+                                <p class="text-justify mt-8">
+                                    Gia Linh, con gái lớn của tôi bắt đầu học tại Language Link Academic từ năm lớp 4, 
+                                    khi gia đình thấy việc con giao tiếp trôi chảy và nắm vững kiến thức ngữ pháp tiếng Anh 
+                                    lớp 4, lớp 5 và thi tiếng Anh vào lớp 6 là rất cần thiết. Ngay sau một vài khóa học của 
+                                    Gia Linh, thấy được sự tiến bộ rõ rệt của con, gia đình đã tiếp tục cho con gái thứ hai 
+                                    là Phan Linh theo học tiếng Anh tại đây. Ban đầu tôi cũng hơi lo lắng vì con còn hơi nhỏ. 
+                                    Nhưng chỉ sau khóa học đầu tiên tôi thấy con đã bạo dạn và tự tin hơn rất nhiều. Và điều 
+                                    quan trọng nhất đó là con rất thích đi học và thể hiện niềm yêu thích, say mê với tiếng Anh.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="lg:mt-0 mt-[-100px]">
+                            <div class="relative w-[146%] left-1/2 translate-x-[-50%]">
+                                <img src="./img/phu-huynh/phu-huynh3.png" alt="" class="mx-auto">
+                            </div>
+                            <div class="relative top-[-8%]">
+                                <p class="text-xl italic font-bold xl:px-10 lg:px-4 text-center">
+                                    Anh Chu Thanh Minh - bố học sinh Vân Ngọc
+                                </p>
+                                <p class="text-justify mt-8">
+                                    Mình đã biết đến Language Link Academic từ rất lâu nhưng phải đến khi con chuẩn bị vào lớp 2, 
+                                    gia đình mới quyết định cho con tham gia chương trình tiếng Anh hè. Thật sự cả nhà mình đã rất 
+                                    bất ngờ và hài lòng với khả năng phản xạ tiếng Anh, cũng như tác phong tự tin, chững chạc của 
+                                    con chỉ sau hơn 1 tháng. Đó cũng chính là lý do thuyết phục gia đình mình tiếp tục đầu tư cho 
+                                    con học tiếng Anh tại đây từ lớp 2 cho đến bây giờ, khi con đã chuẩn bị thi tốt nghiệp cấp 1.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="py-16 bg-[#056737] text-white">
+            <div class="container mx-auto">
+                <div class="text-center grid md:grid-cols-3 sm:grid-cols-2 gap-14">
+                    <div>
+                        <img src="./img/footer/icon-1.png" alt="" class="mx-auto w-[153px]">
+                        <p class="text-lg leading-5 font-bold mt-5">Tập đoàn giáo dục <br> đến từ Anh Quốc</p>
+                    </div>
+                    <div>
+                        <img src="./img/footer/icon-2.png" alt="" class="mx-auto w-[191px]">
+                        <p class="text-lg leading-5 font-bold mt-5">Trong đào tạo <br> Tiếng Anh trẻ em</p>
+                    </div>
+                    <div class="md:col-auto sm:col-span-2">
+                        <img src="./img/footer/icon-3.png" alt="" class="mx-auto w-[153px]">
+                        <p class="text-lg leading-5 font-bold mt-5">18+ năm là đối tác tin cậy của <br> sở giáo dục & đào tạo</p>
+                    </div>
+                </div>
+                <hr class="border-white mt-10 mb-14">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div>
+                        <img src="./img/footer/logo-footer.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="md:col-span-3">
+                        <h4 class="text-lg font-bold mb-4 md:text-left text-center">Liện hệ trung tâm: TP.Hà Nội</h4>
+                        <div class="grid sm:grid-cols-3 gap-4 sm:text-left text-center">
+                            <div>
+                                <p>34T Hoàng Đạo Thuý</p>
+                                <p>Q. Cầu giấy</p>
+                                <p>(84-24) 6256 6888</p>
+                            </div>
+                            <div>
+                                <p>24 Đại Cồ Việt</p>
+                                <p>Q. Hai Bà Trưng</p>
+                                <p>(84-24) 3974 4999</p>
+                            </div>
+                            <div>
+                                <p>24 Nguyễn Cơ Trạch</p>
+                                <p>Q. Nam Từ Liêm</p>
+                                <p>(84) 3755 1919</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div>
+
+    </div>
+
+    <div id="to-form" class="absolute h-1 bg-transparent w-full xl:top-[300px] top-[200px]"></div>
+    <div class="phone-ani fixed bottom-5 left-5 p-2 bg-orange-400 text-white w-24 h-24 flex flex-col items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+        <span class="text-sm mt-2 text-center">1900 633 683</span>
+    </div>
+    <div class="fixed bottom-5 right-5 p-2 bg-orange-400 text-white w-14 h-14 bg-gradient-to-br from-[#3acb5c] to-[#37bbae] flex items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 640 512" fill="#fff"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>
+    </div>
+    <!-- <div class="h-96"></div> -->
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

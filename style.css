@@ -1,0 +1,209 @@
+@font-face {
+    font-family: myFiBaloo2rstFont;
+    src: url(./font);
+}
+@font-face {
+    font-family: 'UTM Bold Itallic';
+    src: url(./font/UTM\ AvoBold_Italic.ttf);
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(./font/MYRIADPRO-LIGHT_0.OTF);
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(./font/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+    font-family: 'UTM Bold';
+    src: url(./font/UTM\ AvoBold.ttf);
+}
+@font-face {
+    font-family: 'Myriad Pro Semi';
+    src: url(./font/MYRIADPRO-SEMIEXT_0.OTF);
+}
+@font-face {
+    font-family: 'Myriad Pro Black Itallic';
+    src: url(./font/MYRIADPRO-BLACKSEMIEXTIT_0.OTF);
+}
+
+@font-face {
+    font-family: 'Baloo 2 Regular';
+    src: url(./font/Baloo2-Regular.ttf);
+}
+@font-face {
+    font-family: 'SNV-STREM';
+    src: url(./font/SVN-STREAMSTER.OTF);
+}
+@font-face {
+    font-family: 'Opensans-ExtraBold';
+    src: url(./font/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Myriad Pro Black';
+    src: url(./font/MYRIADPRO-BLACK_0.OTF);
+}
+
+.container {
+    max-width: 1180px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menuHeader {
+    animation: scale ease-in .3s;
+}
+header.showMenu button svg:nth-child(1) {
+    display: none;
+}
+header.showMenu button svg:nth-child(2) {
+    display: block;
+}
+header.showMenu .menuHeader {
+    display: block !important;
+}
+.banner-text-left {
+    width: 110px;
+    bottom: 17%;
+    left: 6%;
+    transform: rotate(-22deg);
+}
+.banner-text-right {
+    width: 110px;
+    bottom: 16%;
+    right: 6%;
+    transform: rotate(22deg);
+}
+.phone-ani {
+    animation: inUp ease-in-out 3s infinite;
+}
+
+
+@media (min-width: 400px) {
+    .banner-text-left {
+        width: 140px;
+        bottom: 17%;
+        left: 8%;
+    }
+    .banner-text-right {
+        width: 135px;
+        bottom: 17%;
+        right: 8%;
+    }
+}
+@media (min-width: 500px) {
+    .banner-text-left {
+        width: 170px;
+        bottom: 17%;
+        left: 8%;
+    }
+    .banner-text-right {
+        width: 165px;
+        bottom: 17%;
+        right: 8%;
+    }
+}
+@media (min-width: 640px) {
+    .banner-text-left {
+        width: 160px;
+        bottom: 28%;
+        left: 3%;
+        transform: rotate(-5deg);
+    }
+    .banner-text-right {
+        width: 155px;
+        bottom: 28%;
+        right: 3%;
+        transform: rotate(5deg);
+    }
+}
+@media (min-width: 768px) {
+    .banner-text-left {
+        width: 200px;
+        bottom: 24%;
+        left: 8%;
+        transform: rotate(-10deg);
+    }
+    .banner-text-right {
+        width: 195px;
+        bottom: 24%;
+        right: 8%;
+        transform: rotate(10deg);
+    }
+}
+
+@media (min-width: 1280px) {
+    .banner-text-left {
+        width: 250px;
+        bottom: 22%;
+        left: 18%;
+        transform: rotate(-10deg);
+    }
+    .banner-text-right {
+        width: 245px;
+        bottom: 22%;
+        right: 18%;
+        transform: rotate(10deg);
+    }
+}
+@media (min-width: 1536px) {
+    .banner-text-left {
+        bottom: 27%;
+        left: 22%;
+        transform: rotate(-5deg);
+    }
+    .banner-text-right {
+        bottom: 27%;
+        right: 22%;
+        transform: rotate(5deg);
+    }
+}
+@media (min-width: 1700px) {
+    .banner-text-left {
+        width: 289px;
+        bottom: 25%;
+        left: 20%;
+    }
+    .banner-text-right {
+        width: 285px;
+        bottom: 25%;
+        right: 20%;
+    }
+}
+@media (min-width: 1800px) {
+    .banner-text-left {
+        bottom: 24%;
+        left: 23%;
+    }
+    .banner-text-right {
+        bottom: 24%;
+        right: 23%;
+
+    }
+}
+.phone-ani {
+    animation: inUp ease-in-out 3s infinite;
+}
+
+
+@keyframes scale {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes inUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
