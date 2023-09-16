@@ -61,6 +61,12 @@ header.showMenu button svg:nth-child(2) {
 header.showMenu .menuHeader {
     display: block !important;
 }
+.banner {
+    background-image: url(./img/banner/banner1.jpeg);
+}
+.con-duong {
+    background-image: url(./img/con-duong/con-duong.png);
+}
 .banner-text-left {
     width: 110px;
     bottom: 17%;
